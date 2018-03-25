@@ -19,7 +19,7 @@
 	</properties>
 
 	<build>
-		<finalName>JavaFXWebBrowser-${project.version}</finalName>
+		<finalName>Java-Dropbox-API-Full-Tutorial-${project.version}</finalName>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
 			<resource>

@@ -8,6 +8,7 @@ import com.dropbox.core.v2.DbxClientV2;
 import com.dropbox.core.v2.files.ListFolderResult;
 import com.dropbox.core.v2.files.Metadata;
 import com.dropbox.core.v2.users.FullAccount;
+import com.dropbox.core.v2.users.DbxUserUsersRequests;
 
 public class Main {
 	private static final String ACCESS_TOKEN = "<ACCESS-TOKEN HERE>";
@@ -17,12 +18,13 @@ public class Main {
 		
 		try {
 			
-			// Create Dropbox client
-			DbxRequestConfig config = new DbxRequestConfig("dropbox/APPLICATION-NAME-HERE");
-			DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
-			
-			// Get current account info
-			FullAccount account = client.users().getCurrentAccount();
+			DbxRequestConfig config;
+			config = new DbxRequestConfig("dropbox/APPLICATION-NAME-HERE");
+			DbxClientV2 client;
+			client = new DbxClientV2(config, ACCESS_TOKEN);
+			FullAccount account;
+			DbxUserUsersRequests r1 = client.users();
+			account = r1.getCurrentAccount();
 			System.out.println(account.getName().getDisplayName());
 			
 			// Get files and folder metadata from Dropbox root directory
