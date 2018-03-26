@@ -13,4 +13,6 @@ In this tutorial i will show you how to setup a dropbox account , create an app 
 >Dropbox Basic Java Example on Github : https://github.com/dropbox/dropbox-sdk-java/blob/master/examples/tutorial/src/main/java/com/dropbox/core/examples/tutorial/Main.java
 
 # Youtube Full Basic Tutorial for this repository
+[![Video](http://img.youtube.com/vi/JPs3OTbgjGY/0.jpg)](https://www.youtube.com/watch?v=JPs3OTbgjGY)
+
 
